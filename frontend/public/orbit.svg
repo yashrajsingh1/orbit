@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="orbitGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer orbit ring -->
+  <circle cx="50" cy="50" r="45" fill="none" stroke="url(#orbitGradient)" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Middle orbit ring -->
+  <circle cx="50" cy="50" r="32" fill="none" stroke="url(#orbitGradient)" stroke-width="1.5" opacity="0.5"/>
+  
+  <!-- Core focus node -->
+  <circle cx="50" cy="50" r="18" fill="url(#orbitGradient)" opacity="0.9"/>
+  
+  <!-- Inner glow -->
+  <circle cx="50" cy="50" r="12" fill="#ffffff" opacity="0.2"/>
+  
+  <!-- Orbiting dot -->
+  <circle cx="82" cy="50" r="4" fill="#22d3ee"/>
+</svg>
