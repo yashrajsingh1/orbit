@@ -10,7 +10,7 @@ from typing import Optional
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker
 
-from app.core.database import async_engine
+from app.core.database import engine
 from app.core.redis import redis_client
 from app.models import User
 from app.agents import CognitiveProfileAgent
@@ -39,7 +39,7 @@ class BackgroundScheduler:
         
         # Create async session factory
         async_session = async_sessionmaker(
-            async_engine,
+            engine,
             class_=AsyncSession,
             expire_on_commit=False,
         )
